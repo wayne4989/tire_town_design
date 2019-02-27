@@ -1708,7 +1708,7 @@ nav {
 .navleft-container {
 	width: 90%;
 	position: absolute;
-	height: 538px;
+	/*height: 538px;*/
   background: rgba(245, 245, 245, 0.5);
 }
 .mega-menu-title {
@@ -4192,7 +4192,7 @@ position: absolute;
 	font-weight: bold;
 	line-height: normal;
 	font-size: 24px;
-	color: #4D4D4D;	
+	color: #4D4D4D;
 }
 .page-title {
     color: #333;
