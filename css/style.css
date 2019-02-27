@@ -1855,13 +1855,13 @@ nav {
 	/*padding: 15px 20px 15px;*/
 	padding: 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-.popup {
-	padding: 12px;
-}
-.wrap-popup {
-	width: 565px;
-}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.popup {
+		padding: 12px;
+	}
+	.wrap-popup {
+		width: 565px;
+	}
 }
 .popup h3 {
   font-size: 14px;
@@ -16563,7 +16563,7 @@ button.button.button-clear {
 		margin-left: 20px;
 	}
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 	.footer-middle {
     padding-top: 0;
 	}
@@ -16574,7 +16574,7 @@ button.button.button-clear {
     margin: 20px 5% 0;
 	}
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 	.service-title {
 		height: 85px;
 	}
@@ -16655,9 +16655,6 @@ button.button.button-clear {
 		color: #fff;
 		border-radius: 0;
 	}
-	.shop-tires .tp-caption.LargeTitle {
-		text-align: center;
-	}
 	.part {
 		margin-top: 5px;
 		margin-left: 0;
@@ -16695,14 +16692,6 @@ button.button.button-clear {
 	}
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
-	.shop-tires .tp-caption.LargeTitle {
-    display: none;
-	}
-	.part .collection {
-		width: 100%;
-		margin: 0;
-		padding: 0;
-	}
 	.info .shop-button-max {
 		margin: 0 0 10px;
 	}
