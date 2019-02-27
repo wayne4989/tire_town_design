@@ -4182,14 +4182,17 @@ position: absolute;
 
 /*========== 7. Products Grid ==========*/
 .page-heading {
-    color: #333e48;
     display: inline-block;
-    font-size: 28px;
-    font-weight: 600;
-    letter-spacing: -0.5px;
+    /*font-weight: 600;*/
+    /*letter-spacing: -0.5px;*/
     margin: auto;
     position: relative;
-	margin-bottom:15px
+	font-family: 'Nunito Sans';
+	font-style: normal;
+	font-weight: bold;
+	line-height: normal;
+	font-size: 24px;
+	color: #4D4D4D;	
 }
 .page-title {
     color: #333;
@@ -6476,18 +6479,20 @@ figure.effect p {
 	border-radius: 3px 3px 0 0;
 }
 .block .block-title {
-	border-bottom: 1px solid #e5e5e5;
-	color: #333e48;
-	font-size: 18px;
-	font-weight: 600;
+	/*border-bottom: 1px solid #e5e5e5;*/
+	font-family: Nunito Sans;
+	color: #4D4D4D;
+	font-size: 14px;
+	font-weight: bold;
 	line-height: normal;
+	font-style: normal;
 	margin: 0;
 	background: #fff;
-	padding: 10px 0px 15px 0px;
-	position: relative;
+	/*padding: 10px 0px 15px 0px;*/
+	/*position: relative;*/
 }
 
-.block .block-title::after {
+/*.block .block-title::after {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -6495,6 +6500,13 @@ figure.effect p {
     height: 3px;
     width:80px;
     background-color: #fed700;
+}*/
+.block .block-content label {
+	font-family: Nunito Sans;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 12px;
 }
 
 .block .block-title strong {
@@ -6892,7 +6904,7 @@ content: "\f105";
 /*12d.  Block: Layered Navigation */
 .block-layered-nav {
 	background-color: #FFFFFF;
-	margin-top:30px
+	margin-top: 2px;
 }
 .block-layered-nav .block-content {
 	padding: 0;
@@ -7912,10 +7924,11 @@ ol#compare-items li.last {
 }
 .block .block-content {
 	border-top: medium none;
-	font-size: 13px;
+	font-size: 12px;
 	overflow: hidden;
+	margin-top: 12px
 /*	padding: 15px;  */
-    padding:15px 15px 9px 0px;
+    /*padding:15px 15px 9px 0px;*/
 }
 .block-progress dt.complete {
 	margin: 0;
@@ -16557,6 +16570,12 @@ button.button.button-clear {
 }
 .service-item {
 	border-right: 1px solid #E5E5E5;
+}
+.container aside {
+	padding-left: 4%;
+}
+.container .page-tool {
+	float: right;
 }
 @media only screen and (max-width: 1024px) {
 	.top-cart-contain {
