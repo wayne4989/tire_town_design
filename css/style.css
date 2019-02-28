@@ -4201,7 +4201,7 @@ position: absolute;
     line-height: 15px;
     padding: 0px 20px 18px 0px;
     position: relative;
-    border-bottom: 1px solid #E8E8E8;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .page-title h1, .page-title h2 {
@@ -4840,7 +4840,7 @@ button.btn-cart {
 	font-weight: 900;
 	line-height: normal;
 	font-size: 12px;
-	text-transform: uppercase;  
+	text-transform: uppercase;
 }
 
 
@@ -4973,7 +4973,7 @@ button.btn-cart {
 	font-style: normal;
 	font-weight: bold;
 	line-height: normal;
-	font-size: 16px;	
+	font-size: 16px;
 	color:#4D4D4D;
 	/*border-bottom:1px #e5e5e5	solid;*/
 	/*padding-bottom:15px;*/
@@ -12038,7 +12038,7 @@ a.shop-now-btn {
 	text-align: right;
 }
 .toolbar-top {
-  border-bottom: 1px #E8E8E8 solid;		
+  border-bottom: 1px #E8E8E8 solid;
 }
 .toolbar-bottom {
 	margin-top: -75px;
@@ -12396,7 +12396,7 @@ section.home-articles {margin-top:20px; padding-top:40px;}
 .product-option-right {display:none}
 .display-product-option .pages {margin-top:20px}
 .category-products ul.products-grid li.item {border:none; width:100%; padding:0px;}
-/*jjj.item-container {border: none !important; padding: 0px 0px !important;}*/
+
 .categories-list ul li, .categories-list strong {text-align:center}
 
 .cat-img-title.cat-box {width:70%; margin: 2% 0px; padding-left:10px}
@@ -16592,7 +16592,6 @@ button.button.button-clear {
 .service-item {
 	border-right: 1px solid #E5E5E5;
 }
-/*========= JHI ===========*/
 .container aside {
 	padding-left: 4%;
 }
@@ -16607,7 +16606,7 @@ button.button.button-clear {
 .container .page-tool .pagination .active a {
 	color: #2CACE2;
 	text-decoration: underline;
-	background-color: #fff; 
+	background-color: #fff;
 }
 .pagination {
 	margin: 0px;
@@ -16642,7 +16641,7 @@ button.button.button-clear {
 	font-weight: bold;
 	line-height: normal;
 	font-size: 14px;
-	color: #4D4D4D;	
+	color: #4D4D4D;
 }
 .possibility {
   margin-top: 20px;
@@ -16660,7 +16659,7 @@ button.button.button-clear {
   width: 50%;
 }
 .possibility-available {
-  color: #27AE60;	
+  color: #27AE60;
 }
 .possibility-backorder {
   color: #FF0000;
@@ -16853,11 +16852,8 @@ button.button.button-clear {
 		color: #fff;
 	}
 	.item-container {
-	     padding: 0px 0px; 
-	     border-right: 0px #E8E8E8 solid; 
-	}		
-	.move-part .home-slider5 .shop-tires {
-		margin-top: 5%;
+	     padding: 0px 0px;
+	     border-right: 0px #E8E8E8 solid;
 	}
 }
 .mobile-menu #search1 button {
