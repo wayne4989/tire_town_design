@@ -16674,6 +16674,9 @@ button.button.button-clear {
 		color: #fff;
 		border-radius: 0;
 	}
+	.move-part .content_slideshow .row > div.col-lg-3 {
+		display: none;
+	}
 	.part {
 		margin-top: 5px;
 		margin-left: 0;
@@ -16709,6 +16712,17 @@ button.button.button-clear {
 	.shop-row .shop-button-green {
 		margin-top: 20px;
 	}
+	#new-part {
+	}
+	#new-part .part-gray {
+		margin-top: 0;
+	}
+	#new-part .part-gray .btn-cancel {
+		padding: 10px 10px 0 !important;
+	}
+	#new-part .part-gray .drop-down-area .col-lg-4 {
+		margin-top: 10px;
+	}
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 	.info .shop-button-max {
@@ -16725,8 +16739,85 @@ button.button.button-clear {
 	.all-weather .shop-inner {
 		border-right: none;
 	}
+	.move-part .home-slider5 .shop-tires {
+		margin-top: 5%;
+	}
 }
 .mobile-menu #search1 button {
 	background: #2CACE2;
 	color: #fff;
+}
+.part-gray {
+	background: #F8F8F8;
+	overflow: hidden;
+	margin-left: 0;
+	margin-top: 15px;
+}
+.part-gray .quit {
+	overflow: hidden;
+}
+.part-gray .btn-cancel {
+	float: right;
+	padding: 5px !important;
+	color: #4D4D4D;
+	font-size: 14px;
+}
+.drop-down-area {
+	margin: 10px 0 0;
+	overflow: hidden;
+	clear: both;
+	padding: 0 20px;
+}
+.drop-down-area label {
+	font-weight: bold;
+	line-height: normal;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.drop-down select {
+	width: 100%;
+	color: #4D4D4D;
+	font-weight: 600;
+	padding: 6px 10px;
+	font-size: 14px;
+}
+.drop-down-area .radios {
+	text-align: center;
+	padding: 30px 0 10px;
+}
+.drop-down-area .radios label {
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: none;
+	margin: 0 10px 0 0;
+	display: inline-block;
+	vertical-align: middle;
+}
+.drop-down-area .divider {
+	border-bottom: 1px solid #E5E5E5;
+	margin: 15px;
+}
+.drop-down-area .shop-button-green {
+	margin: 20px 0;
+}
+.drop-down-area .shop-button-green a {
+	padding: 12px 10% 8px;
+}
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+	.part-gray {
+		width: 95%;
+	}
+	.drop-down-area {
+		margin-top: 5px;
+	}
+	.drop-down-area .radios {
+		padding: 10px 0 0;
+	}
+	.drop-down-area .col-lg-4 {
+		padding: 0 10px;
+	}
+	.drop-down select {
+		font-size: 11px;
+	}
 }
