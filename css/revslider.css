@@ -365,18 +365,22 @@ font-size:24px;
 		font-size: 10px !important;
 	}
 	.home-slider5 #thmg-slideshow .content_slideshow {left:0; top:0;right: 0;}
+	.home-slider5 #thmg-slideshow .content_slideshow .col-md-3 {
+		display: none;
+	}
 	.home-slider5 .info {margin-top:5%}
 	.home-slider5 .info.tires, .home-slider5 .info.wheels {
-		margin-top: 0;
+		margin-top: 3%;
 		margin-left: 25%;
 	}
 	.tp-caption.ExtraLargeTitle span {font-size:16px!important}
 	.tp-caption.LargeTitle {font-size:26px!important; line-height:1.1em!important; margin-top:10px!important}
 	.home-slider5 .shop-tires {
-		margin-top: 2%;
+		margin-top: 0;
 	}
 	.shop-tires .tp-caption.LargeTitle, .shop-wheels .tp-caption.LargeTitle {
-    display: none;
+    /*display: none;*/
+    margin-top: 0 !important;
 	}
 	.tp-caption.LargeTitle span {
 		font-size:26px;
