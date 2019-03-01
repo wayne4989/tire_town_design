@@ -472,7 +472,7 @@ a.button:hover {
 .main-container {
 	min-height: 400px;
 	padding: 0px;
-	margin-top:20px
+	margin-top: 35px
 }
 /*----------- 3. Header --------------*/
 
@@ -4871,6 +4871,7 @@ button.btn-cart {
 }
 .products-grid .item .item-inner .item-img {
 	position: relative;
+	border: 1px solid #e8e8e8;
 }
 .products-grid .item .item-inner .item-img .ico-product {
 	position: absolute;
@@ -5008,8 +5009,8 @@ button.btn-cart {
 
 }
 .products-grid .item:hover .item-inner .item-info .info-inner .action button.button {
-	background: #fed700;
-	color: #333;
+	background: #334141;
+	color: #fff;
 	border:none;
 	transition: color 300ms ease-in-out 0s, background-color 300ms ease-in-out 0s, background-position 300ms ease-in-out 0s;
 }
@@ -12039,9 +12040,11 @@ a.shop-now-btn {
 }
 .toolbar-top {
   border-bottom: 1px #E8E8E8 solid;
+  background: none;
 }
 .toolbar-bottom {
 	margin-top: -75px;
+	background: none;
 }
 .toolbar .sorter {
 	float: left;
@@ -16587,7 +16590,6 @@ button.button.button-clear {
 	font-size: 14px;
 	text-align: center;
 	color: #334141;
-	mix-blend-mode: normal;
 }
 .service-item {
 	border-right: 1px solid #E5E5E5;
@@ -16595,13 +16597,29 @@ button.button.button-clear {
 .container aside {
 	padding-left: 4%;
 }
-.container .page-tool .pagination li a, .container .page-tool .pagination li span {
+.container .page-tool .pagination li span {
 	font-size: 14px;
-  padding: 0px 5px;
+  padding: 0 4px;
+  margin: 0 4px;
+  line-height: 1.42857143;
+  color: #000;
+  border: none;
+}
+.container .page-tool .pagination li span:hover {
+	background: none;
+}
+.container .page-tool .pagination li a {
+	font-size: 14px;
+  padding: 0 5px;
   margin-left: -1px;
   line-height: 1.42857143;
   color: #000;
-  border: 0px
+  border: none;
+  border-radius: 2px;
+}
+.container .page-tool .pagination li a.page-arrow {
+	font-size: 8px;
+	padding: 5px 7px;
 }
 .container .page-tool .pagination .active a {
 	color: #2CACE2;
@@ -16618,12 +16636,13 @@ button.button.button-clear {
 }
 .pagination i {
 	color: #FFF;
+	font-size: 8px;
 }
 .pagination li a.page-arrow:hover {
-    z-index: 2;
-    color: #23527c;
-    background-color: #0083c1;
-    border-color: #ddd;
+  z-index: 2;
+  color: #23527c;
+  background-color: #0083c1;
+  border-color: #ddd;
 }
 .season {
 	font-style: normal;
