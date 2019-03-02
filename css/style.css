@@ -880,7 +880,7 @@ div.effect-sadie1+div.effect-sadie1 {
 	margin-left: 0;
 	border: 1px solid #e5e5e5;
 	background: #fff;
-	width: 111%;
+	width: calc(100% - 33px);
 	height: 47px;
 }
 .category-search-form {
@@ -1272,7 +1272,7 @@ ul.currencies_list li a:hover {
 
 /* Top Shopping Cart */
 .card_wishlist_area {
-	/*padding-left: 0px*/
+	padding-left: 0px
 }
 .top-cart-content {
 	display: none;
@@ -1302,11 +1302,11 @@ ul.currencies_list li a:hover {
 	color: #333
 }
 .top-cart-contain .price {
-	color: #efcb04;
+	color: #2CACE2;
   padding-top: 8px;
   display: block;
-  font-size: 22px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 900;
 }
 .top-cart-contain .product-details .price {
 	color: #373a3c;
@@ -1391,7 +1391,7 @@ ul.currencies_list li a:hover {
 .top-cart-contain {
 	margin-top: 58px;
   position: relative;
-  margin-left: 60px;
+  margin-left: -15px;
 }
 .mgk-wishlist {
 	position: relative;
@@ -13556,8 +13556,7 @@ footer .footer-inner {
 
 }
 .mini-cart .basket a span {
-	display:none
-
+	display:none;
 }
 
 .mini-cart .basket a span.cart_count {display:block}
@@ -13853,6 +13852,7 @@ nav .container .row .col-xs-12 {
 	float: right;
 	margin-left: 12px;
 	margin-top: 0;
+	min-width: 160px;
 }
 .mini-cart .btn-remove1 {
 	right: 4px!important;
@@ -15051,7 +15051,7 @@ text-align: center;
 	width: 135px;
 }
 .mini-cart .basket a {
-	min-width: 100% !important;
+	/*min-width: 100% !important;*/
 	font-size: 12px;
 }
 .caption.light1 {
@@ -15680,7 +15680,8 @@ bottom-banner-img1.last {
 	margin-top: 0px;
 }
 .card_wishlist_area {
-	padding-right: 15px;
+	/*padding-right: 15px;*/
+	padding-right: 0;
 }
 .related-pro .owl-theme .owl-controls {
 	top: -20%;
@@ -16289,8 +16290,8 @@ button.button.button-clear {
 	top: 48px;
 }
 .top-cart-contain {
-	float: right;
-	width: 80%;
+	/*float: right;*/
+	/*width: 80%;*/
 }
 .offer-label {
 	letter-spacing: normal;
@@ -16443,6 +16444,11 @@ button.button.button-clear {
 	text-align: center;
 	color: #334141;
 	text-transform: uppercase;
+}
+.brands-title.brands-title-left h2 {
+	text-align:left;
+	padding-left:15px;
+	color: #4D4D4D;
 }
 .brands-row {
 	margin: 0 15px;
@@ -16706,7 +16712,7 @@ button.button.button-clear {
 }
 @media only screen and (max-width: 1024px) {
 	.top-cart-contain {
-		margin-left: 20px;
+		/*margin-left: 20px;*/
 	}
 }
 @media only screen and (max-width: 991px) {
@@ -16978,4 +16984,69 @@ button.button.button-clear {
 	.drop-down-area .shop-button-green {
 		margin: 10px 0;
 	}
+}
+
+.recent-orders .brands-row {
+	margin-bottom: 80px;
+	overflow-x: scroll;
+}
+.recent-orders .data-table tbody th {
+	font-weight: bold;
+}
+.recent-orders .data-table tbody td {
+	/*padding: 10px;*/
+}
+.recent-orders table .ship-to {
+	width: 50%;
+}
+.recent-orders table td {
+	vertical-align: middle;
+}
+.data-table tbody .view-order {
+	padding: 10px;
+}
+.view-order a {
+	font-size: 14px;
+	color: #334141;
+	border: 1px solid #EAEAEA;
+	border-radius: 4px;
+	padding: 6px 9px 4px;
+	display: inline-block;
+}
+.view-order a:hover {
+	background: #334141;
+	color: #fff;
+}
+.no-break span {
+	white-space: pre;
+}
+.mini-cart .basket a.exist {
+	display: block;
+}
+.mini-cart .basket a.exist i {
+	color: #000;
+	float: left;
+	margin-top: 4px;
+	margin-right: 5px;
+}
+.mini-cart .basket a.exist span {
+	display: block;
+	padding-top: 6px;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.mini-cart .basket a.exist span {
+		display: none;
+	}
+}
+.mini-cart .basket a.exist span.cart_count {
+	padding-top: 0;
+	display: block;
+}
+.toplinks .login-text span {
+	color: #334141;
+	text-transform: uppercase;
+	font-size: 10px;
+}
+.toplinks .login-text span.blue {
+	color: #2CACE2;
 }
