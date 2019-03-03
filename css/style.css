@@ -4266,11 +4266,10 @@ position: absolute;
 }
 .product-bestseller {
 	padding: 25px 0px;
-    overflow: hidden;
-    border-top: none;
-    margin: 0px -25px;
-    padding-bottom: 0px;
-
+  overflow: hidden;
+  border-top: none;
+  margin: 0px -25px;
+  padding-bottom: 0px;
 }
 .product-bestseller .product-featured-content {
 	width: 100%;
@@ -16987,7 +16986,7 @@ button.button.button-clear {
 }
 
 .recent-orders .brands-row {
-	margin-bottom: 80px;
+	margin-bottom: 10px;
 	overflow-x: scroll;
 }
 .recent-orders .data-table tbody th {
@@ -17002,10 +17001,10 @@ button.button.button-clear {
 .recent-orders table td {
 	vertical-align: middle;
 }
-.data-table tbody .view-order {
+.data-table tbody .btn-wrap {
 	padding: 10px;
 }
-.view-order a {
+.btn-wrap a {
 	font-size: 14px;
 	color: #334141;
 	border: 1px solid #EAEAEA;
@@ -17013,7 +17012,7 @@ button.button.button-clear {
 	padding: 6px 9px 4px;
 	display: inline-block;
 }
-.view-order a:hover {
+.btn-wrap a:hover {
 	background: #334141;
 	color: #fff;
 }
@@ -17049,4 +17048,55 @@ button.button.button-clear {
 }
 .toplinks .login-text span.blue {
 	color: #2CACE2;
+}
+.greetings {
+	padding-left: 15px;
+	color: #4D4D4D;
+	margin-top: 33px;
+}
+.greetings .greetings-title {
+	font-size: 24px;
+	margin-bottom: 0;
+}
+.greetings .greetings-desc {
+	font-size: 14px;
+}
+.section {
+	margin-top: 20px;
+}
+.section h3 {
+  text-align: left;
+  padding: 10px 0 10px 10px;
+  color: #4D4D4D;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 23px;
+  background: #F5F5F5;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+.my-account {
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.my-account .col-lg-6 {
+	padding: 0 10px;
+}
+.section > div {
+	padding: 0 10px;
+}
+.section .content {
+	color: #4D4D4D;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.section-title {
+	padding: 10px 15px;
+	margin-top: 0;
+}
+@media only screen and (max-width: 991px) {
+	.my-account {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
 }
