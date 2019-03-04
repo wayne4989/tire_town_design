@@ -10244,8 +10244,6 @@ input#coupon_code {
 	background-color: #FFFFFF;
 	text-align: left;
 	border: none;
-	/*margin-bottom: 15px;*/
-	/*margin-top: 20px;*/
 }
 .padding-row {
   border-collapse:separate;
@@ -10262,7 +10260,7 @@ input#coupon_code {
 	text-decoration: none;
 	font-size: 14px;
 	font-weight: normal;
-	letter-spacing: 0.5px;
+	/*letter-spacing: 0.5px;*/
 	color: #333;
 }
 .data-table thead th, .data-table thead td, .data-table tfoot th, .data-table tfoot td, .cart .totals table th, .cart .totals table td {
@@ -10272,7 +10270,7 @@ input#coupon_code {
     background-color: #fff;
     border: none;
 }
-#shopping-cart-table thead th {
+#shopping-cart-table thead th, #single-order-table thead th {
 	font-style: normal;
 	font-weight: bold;
 	line-height: 23px;
@@ -10387,6 +10385,8 @@ input#coupon_code {
   border: 1px solid  #E8E8E8;
   display: block;
   padding: 5px;
+  width: 100px;
+  height: 100px;
 }
 #shopping-cart-table tbody td.image a img {
 	width: 100%;
@@ -17276,4 +17276,50 @@ button.button.button-clear {
 	#shopping-cart-totals-table tbody td {
 		/*font-size: 13px;*/
 	}
+}
+.row.single-order {
+	margin-top: 15px;
+	margin-bottom: 50px;
+}
+.single-order-table  thead th {
+	font-weight: bold;
+	color: #4D4D4D;
+	border-bottom: 1px solid #f4f4f4;
+	padding: 0 10px 10px 10px;
+}
+.single-order-table tbody td {
+	padding: 10px;
+	vertical-align: middle;
+	border-bottom: 1px solid #F4F4F4;
+}
+.single-order-table tbody td.image {
+	padding-left: 0;
+}
+.single-order-table tbody td.image a {
+  border: 1px solid #E8E8E8;
+  display: block;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+}
+.single-order-table tbody td.image a img {
+	width: 100%;
+}
+.single-order-table tbody td.product-des a {
+  font-size: 14px;
+  color: #4D4D4D;
+}
+.single-order-table thead th.a-right {
+	text-align: right;
+	padding-right: 10px;
+}
+.single-order-table tbody td.a-right {
+	text-align: right;
+}
+.single-order-table tbody td.no-border {
+	border-bottom: none;
+}
+.single-order-table tbody td span.payment-total {
+	font-size: 16px;
+	font-weight: 900;
 }
