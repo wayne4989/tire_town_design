@@ -329,16 +329,16 @@ button {
 	color: #333
 }
 button.button {
-    background: none repeat scroll 0 0 #fff;
-    color: #333e48;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: normal;
-    padding: 9px 15px;
-    border: 1px #ddd solid;
-    border-radius: 4px;
-    font-family: 'Open Sans', sans-serif;
+  background: none repeat scroll 0 0 #fff;
+  color: #333e48;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  padding: 9px 15px;
+  border: 1px #ddd solid;
+  border-radius: 4px;
+  /*font-family: 'Open Sans', sans-serif;*/
 }
 button.button:hover {
 	transition: all 0.3s linear;
@@ -346,8 +346,7 @@ button.button:hover {
 	-webkit-transition: all 0.3s linear;
 	background-color: #fed700;
 	color: #333e48;
-	border: 1px #fed700 solid;
-
+	/*border: 1px #fed700 solid;*/
 }
 a.button {
 	display: inline-block;
@@ -9763,7 +9762,7 @@ a.buy-theme {
 
 .add-icon:before {
 	content: "\f57d";
-	font-family: 'Font Awesome 5 Free';
+	font-family: 'Font Awesome\ 5 Free';
 	font-size: 16px;
 }
 
@@ -10079,24 +10078,21 @@ ul.shipping-pro li {
 	color: #333;
 }
 .cart .totals table th, .cart .totals table td strong {
-/*	font-weight: 900;
-	font-size: 12px; */
-
 	font-weight: 700;
-    font-size: 13px;
-
+  font-size: 13px;
 }
 .cart-collaterals {
 	margin-top: 40px;
 	margin-bottom: 30px;
-
+	margin-left: -20px;
+	margin-right: -20px;
 }
 .cart-collaterals label {
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
 	font-size: 14px;
-	color: #4D4D4D;	
+	color: #4D4D4D;
 }
 .cart-collaterals .shipping-form label {
 	margin-bottom: 18px;
@@ -10120,7 +10116,8 @@ ul.shipping-pro li {
 	width: 320px;
 }
 .totals .inner {
-	padding: 4px 0px 0px 0px;
+	/*padding: 4px 0px 0px 0px;*/
+	padding: 0;
 	background-color: #fff;
 	margin-top: 0px;
 }
@@ -10129,8 +10126,8 @@ ul.shipping-pro li {
 	width: 100%;
 	margin-bottom: 0px;
   border-collapse: separate;
-  border-spacing: 0 30px;
-  margin-top: -39px;	
+  border-spacing: 0;
+  margin-top: -15px;
 }
 #shopping-cart-totals-table .price {
 	font-size: 14px;
@@ -10195,20 +10192,15 @@ select {
 	width: 95%;
 }
 .cart-collaterals h3 {
-	/*font-size: 18px;*/
-	/*color: #000;*/
 	margin-bottom: 22px;
-	/*border-bottom: 1px solid #e5e5e5;*/
-	padding-left: 10px;
-	margin-top: auto;
+	margin-top: 0;
+	padding: 10px;
 	letter-spacing:normal;
-	/*font-weight: 600;*/
-
-	font-style: normal;
 	font-weight: bold;
 	line-height: 23px;
 	font-size: 14px;
-	color: #4D4D4D;	
+	color: #4D4D4D;
+	background: #F5F5F5;
 }
 .buttons-set11 {
 	margin-top: 10px;
@@ -10254,10 +10246,9 @@ input#coupon_code {
 	border: none;
 	/*margin-bottom: 15px;*/
 	/*margin-top: 20px;*/
-
 }
 .padding-row {
-  border-collapse:separate; 
+  border-collapse:separate;
   border-spacing:0 21px;
 }
 #shopping-cart-table .img-thumbnail {
@@ -10287,27 +10278,31 @@ input#coupon_code {
 	line-height: 23px;
 	font-size: 14px;
 	color: #4D4D4D;
-	padding-bottom: 5px;
+	padding: 10px;
+	background: #F5F5F5;
 }
 #shopping-cart-totals-table tfoot td strong {
 	font-style: normal;
 	font-weight: 900;
 	line-height: normal;
 	font-size: 16px;
-	color: #27AE60;	
+	color: #27AE60;
 }
 #shopping-cart-totals-table tbody td {
-/*	font-style: normal;
-	font-weight: normal;
-	line-height: normal;*/
 	font-size: 14px;
 	color: #4D4D4D;
 	white-space: nowrap !important;
+	border-bottom: 1px solid #f4f4f4;
+	padding: 15px 0;
 }
-#shopping-cart-totals-table tfoot td.a-right {
-	text-align: right;
+#shopping-cart-totals-table tbody td.a-left {
+	padding-left: 10px;
 }
 #shopping-cart-totals-table tbody td.a-right {
+	text-align: right;
+	padding-right: 10px;
+}
+#shopping-cart-totals-table tfoot td.a-right {
 	text-align: right;
 }
 #shopping-cart-table button.button {
@@ -10330,7 +10325,8 @@ input#coupon_code {
 	font-size: 12px;
 	text-align: center;
 	text-transform: uppercase;
-	color: #FFFFFF;	
+	color: #FFFFFF;
+	margin-top: 20px;
 }
 #shopping-cart-table input.qty {
 	background: none repeat scroll 0 0 #FFFFFF;
@@ -10382,20 +10378,28 @@ input#coupon_code {
 	padding: 0;
 }
 #shopping-cart-table tbody td {
-  border: none; 
+  padding: 10px;
 }
 #shopping-cart-table tbody td.image {
-  border: 1px solid  #E8E8E8; 
+  padding-left: 0;
+}
+#shopping-cart-table tbody td.image a {
+  border: 1px solid  #E8E8E8;
+  display: block;
+  padding: 5px;
+}
+#shopping-cart-table tbody td.image a img {
+	width: 100%;
 }
 #shopping-cart-table tbody td.product-des a {
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 14px;
-color: #4D4D4D;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 14px;
+	color: #4D4D4D;
 }
 #shopping-cart-table tbody td.product-des {
-	padding-left: 23px;
+	/*padding-left: 23px;*/
 }
 #shopping-cart-table .item-options dd {
 	color: #CCCCCC;
@@ -10411,12 +10415,11 @@ color: #4D4D4D;
 	display: block;
 }
 #shipping-zip-form .description {
-	font-style: normal;
-	font-weight: normal;
-	line-height: normal;
 	font-size: 14px;
-	color: #4D4D4D;	
-	margin-bottom: 34px;
+	color: #4D4D4D;
+	margin-bottom: 15px;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 15px;
 }
 #shopping-cart-table .cart-price .price {
 	font-style: normal;
@@ -10457,10 +10460,8 @@ button.button.btn-proceed-checkout {
 	/*color: #333;*/
 	width: 100%;
 	border: none;
-	/*font-weight: 700;*/
 	height: inherit;
 	padding:14px 12px;
-	font-style: normal;
 	font-weight: 900;
 	line-height: normal;
 	font-size: 14px;
@@ -10468,20 +10469,19 @@ button.button.btn-proceed-checkout {
 	color: #FFFFFF;
 }
 button.button.btn-proceed-checkout:hover {
-	background: #0083c1;
+	background: #2CACE2;
 	color: #fff;
 }
 button.button.btn-proceed-checkout:before {
-	content: "\f00c";
+	content: "\f023";
 	font-family: FontAwesome;
 	font-size: 16px;
 	padding-right: 5px;
 	font-weight: normal;
 }
 button.button.btn-proceed-checkout span {
-	font-size: 16px;
-	font-weight: 700;
-
+	font-size: 14px;
+	font-weight: 900;
 }
 .checkout-cart #button-coupon, .checkout-cart #button-voucher {
 	border: 1px solid #ddd;
@@ -11276,7 +11276,6 @@ a.button.wishlist {
 	color: #333e48;
 	font-weight: 600;
 	margin-top: auto;
-
 }
 .multiple-checkout .grand-total {
 	font-size: 1.5em;
@@ -11691,12 +11690,11 @@ a.button.wishlist {
 	font-size: 14px;
 }
 #shopping-cart-table .data-table th {
-font-style: normal;
-font-weight: bold;
-line-height: 23px;
-font-size: 14px;
-color: #4D4D4D;
-
+	font-style: normal;
+	font-weight: bold;
+	line-height: 23px;
+	font-size: 14px;
+	color: #4D4D4D;
 }
 .data-table td {
 	line-height: 20px;
@@ -11729,9 +11727,9 @@ color: #4D4D4D;
 
 #shopping-cart-totals-table td {
 	border-top: 0px solid #eaeaea;
-	border-bottom: 0px solid #eaeaea;
+	border-bottom: 1px solid #f4f4f4;
 	font-size: 14px;
-
+	padding: 15px 10px;
 }
 .data-table tbody th, .data-table tbody td {
 	border-bottom: 1px solid #eaeaea;
@@ -16845,8 +16843,8 @@ button.button.button-clear {
 	color: #4D4D4D;
 }
 .item-container {
-    padding: 0px 25px;
-    border-right: 1px #E8E8E8 solid;
+  padding: 0px 25px;
+  border-right: 1px #E8E8E8 solid;
 }
 .cart-collaterals .shipping button, .cart-collaterals .discount button {
 	background: #4F4F4F;
@@ -16855,13 +16853,13 @@ button.button.button-clear {
 	font-weight: 900;
 	line-height: 10px;
 	font-size: 12px;
-	color: #FFFFFF;	
+	color: #FFFFFF;
 	padding: 9px 10px;
 	margin-left: 8px;
 }
 .collaterals-inner {
-  padding-right: 0px;
-  padding-left: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 @media only screen and (max-width: 1024px) {
 	.top-cart-contain {
@@ -17141,7 +17139,7 @@ button.button.button-clear {
 
 .recent-orders .brands-row {
 	margin-bottom: 10px;
-	overflow-x: scroll;
+	overflow-x: auto;
 }
 .recent-orders .data-table tbody th {
 	font-weight: bold;
@@ -17252,5 +17250,30 @@ button.button.button-clear {
 	.my-account {
 		margin-left: -10px;
 		margin-right: -10px;
+	}
+}
+.cart-collaterals .totals button.btn-proceed-checkout {
+	margin-top: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.cart-collaterals {
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	.collaterals-inner {
+	  padding-right: 5px;
+	  padding-left: 5px;
+	}
+	#shopping-cart-totals-table td {
+		padding: 15px 0;
+	}
+	#shopping-cart-totals-table tbody td.a-left {
+		padding-left: 0;
+	}
+	#shopping-cart-totals-table tbody td.a-right {
+		padding-right: 0;
+	}
+	#shopping-cart-totals-table tbody td {
+		/*font-size: 13px;*/
 	}
 }
