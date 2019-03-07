@@ -206,103 +206,263 @@
   <!-- end header -->
 
   <div class="container">
-    <div class="row recent-orders">
-      <div class="brands-title brands-title-left">
-        <h2>Recent Orders</h2>
+    <div class="row checkout-page">
+      <div class="col-md-8">
+        <div class="section">
+          <h3>Billing Address:</h3>
+        </div>
+        <div class="section-inner">
+          <fieldset>
+            <input type="hidden" name="">
+            <ul>
+              <li>
+                <label>Email Address:</label><br>
+                <input type="email" class="input-text">
+              </li>
+              <li>
+                <div class="half">
+                  <label>First Name:</label><br>
+                  <input type="text" class="input-text">
+                </div>
+                <div class="half right">
+                  <label>Last Name:</label><br>
+                  <input type="text" class="input-text">
+                </div>
+              </li>
+              <li>
+                <div class="half">
+                  <label>Company:</label><br>
+                  <input type="text" class="input-text">
+                </div>
+                <div class="half right">
+                  <div class="half left">
+                    <label>Phone Number:</label><br>
+                    <input type="text" class="input-text">
+                  </div>
+                  <div class="half right">
+                    <label>Mobile Number:</label><br>
+                    <input type="text" class="input-text">
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="address">
+                  <label>Address:</label><br>
+                  <input type="text" class="input-text">
+                </div>
+                <div class="apt right">
+                  <label>Apt. Office, Etc.</label><br>
+                  <input type="text" class="input-text">
+                </div>
+              </li>
+              <li>
+                <div class="half">
+                  <label>City:</label><br>
+                  <input type="text" class="input-text">
+                </div>
+                <div class="half right">
+                  <div class="half left">
+                    <label>Postal:</label><br>
+                    <input type="text" class="input-text">
+                  </div>
+                  <div class="half right">
+                    <label>Province:</label><br>
+                    <input type="text" class="input-text">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="section">
+          <h3>Shipping Address:</h3>
+        </div>
+        <div class="section-inner shipping-address">
+          <ul>
+            <li class="border-bottom opt-parent">
+              <input type="radio" class="" name="opt_shipping_address">
+              <label>Ship to the billing address above</label>
+            </li>
+            <li class="opt-parent">
+              <input type="radio" class="" name="opt_shipping_address">
+              <label>Ship to a different address</label>
+
+              <div>
+                <fieldset>
+                  <ul>
+                    <li>
+                      <label>Email Address:</label><br>
+                      <input type="email" class="input-text">
+                    </li>
+                    <li>
+                      <div class="half">
+                        <label>First Name:</label><br>
+                        <input type="text" class="input-text">
+                      </div>
+                      <div class="half right">
+                        <label>Last Name:</label><br>
+                        <input type="text" class="input-text">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="half">
+                        <label>Company:</label><br>
+                        <input type="text" class="input-text">
+                      </div>
+                      <div class="half right">
+                        <div class="half left">
+                          <label>Phone Number:</label><br>
+                          <input type="text" class="input-text">
+                        </div>
+                        <div class="half right">
+                          <label>Mobile Number:</label><br>
+                          <input type="text" class="input-text">
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="address">
+                        <label>Address:</label><br>
+                        <input type="text" class="input-text">
+                      </div>
+                      <div class="apt right">
+                        <label>Apt. Office, Etc.</label><br>
+                        <input type="text" class="input-text">
+                      </div>
+                    </li>
+                    <li>
+                      <div class="half">
+                        <label>City:</label><br>
+                        <input type="text" class="input-text">
+                      </div>
+                      <div class="half right">
+                        <div class="half left">
+                          <label>Postal:</label><br>
+                          <input type="text" class="input-text">
+                        </div>
+                        <div class="half right">
+                          <label>Province:</label><br>
+                          <input type="text" class="input-text">
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+
+            </li>
+            <li class="opt-parent">
+              <input type="radio" class="" name="opt_shipping_address">
+              <label>Local Pick Up</label>
+            </li>
+          </ul>
+        </div>
+        <div class="section">
+          <h3>Shipping Instructions:</h3>
+        </div>
+        <div class="section-inner shipping-instructions">
+          <textarea></textarea>
+        </div>
       </div>
-      <div class="brands-row">
-        <table class="data-table">
-          <tr>
-            <th class="no-break"><span>Order Number:</b></span></th>
-            <th>Date:</th>
-            <th class="ship-to no-break"><span>Ship To:</span></th>
-            <th class="no-break"><span>Order Total:</span></th>
-            <th>Status:</th>
-            <th>&nbsp;</th>
-          </tr>
-          <tr>
-            <td>125711692</td>
-            <td>02/10/2019</td>
-            <td class="no-break"><span>Jim Smith</span></td>
-            <td>$2,138.58</td>
-            <td>Processing</td>
-            <td class="btn-wrap no-break"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-          <tr>
-            <td>123568247</td>
-            <td>02/07/2019</td>
-            <td class="no-break">Jim Smith</td>
-            <td>$695.25</td>
-            <td>Shipped</td>
-            <td class="btn-wrap"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-          <tr>
-            <td>123456789</td>
-            <td>01/28/2019</td>
-            <td class="no-break">Jim Smith</td>
-            <td>$49.56</td>
-            <td>Delivered</td>
-            <td class="btn-wrap"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-          <tr>
-            <td>125711692</td>
-            <td>02/10/2019</td>
-            <td class="no-break">Jim Smith</td>
-            <td>$2,138.58</td>
-            <td>Processing</td>
-            <td class="btn-wrap"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-          <tr>
-            <td>123568247</td>
-            <td>02/07/2019</td>
-            <td class="no-break">Jim Smith</td>
-            <td>$695.25</td>
-            <td>Shipped</td>
-            <td class="btn-wrap"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-          <tr>
-            <td>123456789</td>
-            <td>01/28/2019</td>
-            <td class="no-break">Jim Smith</td>
-            <td>$49.56</td>
-            <td>Delivered</td>
-            <td class="btn-wrap"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-          <tr>
-            <td>125711692</td>
-            <td>02/10/2019</td>
-            <td class="no-break">Jim Smith</td>
-            <td>$2,138.58</td>
-            <td>Processing</td>
-            <td class="btn-wrap"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-          <tr>
-            <td>123568247</td>
-            <td>02/07/2019</td>
-            <td class="no-break">Jim Smith</td>
-            <td>$695.25</td>
-            <td>Shipped</td>
-            <td class="btn-wrap"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-          <tr>
-            <td>123456789</td>
-            <td>01/28/2019</td>
-            <td class="no-break">Jim Smith</td>
-            <td>$49.56</td>
-            <td>Delivered</td>
-            <td class="btn-wrap"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-          <tr>
-            <td>123456789</td>
-            <td>01/28/2019</td>
-            <td class="no-break">Jim Smith</td>
-            <td>$49.56</td>
-            <td>Delivered</td>
-            <td class="btn-wrap"><a href="" class=""><span>View Order</span></a></td>
-          </tr>
-        </table>
+      <div class="col-md-4 sidebar">
+        <div class="section">
+          <h3>Order Summary:</h3>
+          <div class="summary-edit">
+            <a href=""><i class="fa fa-pen"></i>&nbsp;Edit</a>
+          </div>
+        </div>
+        <div class="">
+          <fieldset>
+            <ul>
+              <li class="border-bottom">
+                <span class="bold">Michelin<br>Latitude® X-Ice® Xi2™<br>185/55R15<br>12345</span>
+                <span class="price">4 x $131.95</span>
+              </li>
+              <li class="border-bottom">
+                <span class="bold">Environmental Fee - Ontario</span>
+                <span class="price">4 x $4.00</span>
+              </li>
+              <li class="border-bottom">
+                <span class="bold">American Racing<br>427 Mono Cast<br>size/specs here<br>123456789</span>
+                <span class="price">4 x $258.99</span>
+              </li>
+              <li class="border-bottom-thick">
+                <span class="bold">ITM<br>Uni-Sensor<br>Multi<br>456789</span>
+                <span class="price">4 x $69.95</span>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="">
+          <ul>
+            <li class="border-bottom">
+              <span class="left">Sub-Total:</span>
+              <span class="right">$1,843.56</span>
+            </li>
+            <li class="border-bottom">
+              <span class="left">Shipping & Handling:</span>
+              <span class="right">$48.99</span>
+            </li>
+            <li class="border-bottom">
+              <span class="left">Tax:</span>
+              <span class="right">$246.03</span>
+            </li>
+            <li class="payment-total">
+              <span class="left">Payment Total:</span>
+              <span class="right">$2,138.58</span>
+            </li>
+          </ul>
+        </div>
+        <div class="section payment-method">
+          <h3><i class="fa fa-lock"></i>&nbsp; Secure Payment Method:</h3>
+        </div>
+        <div class="section-inner card-section">
+          <fieldset>
+            <input type="hidden" name="">
+            <ul>
+              <li>
+                <label>Credit Card Number:</label><br>
+                <input type="text" class="input-text">
+              </li>
+              <li>
+                <label>Cardholder Name:</label><br>
+                <input type="text" class="input-text">
+              </li>
+              <li>
+                <div class="half">
+                  <label>Expiry Month:</label><br>
+                  <input type="text" class="input-text">
+                </div>
+                <div class="half right">
+                  <label>Expiry Year:</label><br>
+                  <input type="text" class="input-text">
+                </div>
+              </li>
+              <li class="border-bottom security-code">
+                <div class="half">
+                  <label>Security Code:</label><br>
+                  <input type="text" class="input-text">
+                </div>
+                <div class="half right card">
+                  <img src="images/icon_card_digits.png">
+                  <span>3 digit number<br>on back of card</span>
+                </div>
+              </li>
+              <li class="terms">
+                <input type="checkbox">
+                <label>I Agree to the <span class="blue">terms & Conditions</span></label>
+              </li>
+              <li class="terms">
+                <input type="checkbox">
+                <label>Subscribe to Newsletter</label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="section confirm-order">
+          <a href=""><h3><i class="fa fa-lock"></i>&nbsp; Confirm Order</h3></a>
+        </div>
       </div>
-      <div style="height: 70px;"></div>
     </div>
   </div>
 
@@ -536,6 +696,20 @@
 
   });
 </script>
+<!-- Hot Deals Timer 1-->
+<script>
+      var dthen1 = new Date("12/25/17 11:59:00 PM");
+      start = "08/04/15 03:02:11 AM";
+      start_date = Date.parse(start);
+      var dnow1 = new Date(start_date);
+      if (CountStepper > 0)
+      ddiff = new Date((dnow1) - (dthen1));
+      else
+      ddiff = new Date((dthen1) - (dnow1));
+      gsecs1 = Math.floor(ddiff.valueOf() / 1000);
 
+      var iid1 = "countbox_1";
+      CountBack_slider(gsecs1, "countbox_1", 1);
+    </script>
 </body>
 </html>
