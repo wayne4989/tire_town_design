@@ -4981,10 +4981,11 @@ button.btn-cart {
 .product-view .product-shop .brand {border:none; margin-bottom:0px; padding-bottom:5px}
 
 .products-grid .item .item-inner .item-info .info-inner .item-title a {
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: normal;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #2CACE2;
 }
 .products-grid .item .item-inner .item-info .info-inner .item-title a:hover {
 	color: #0083c1;
@@ -16951,9 +16952,9 @@ button.button.button-clear {
 		padding: 0;
 	}
 	.mm-toggle {
-		background: #2CACE2;
-		color: #fff;
-		border-radius: 0;
+		background: #2CACE2 !important;
+		color: #fff !important;
+		border-radius: 0 !important;
 	}
 	.move-part .content_slideshow .row > div.col-lg-3 {
 		display: none;
