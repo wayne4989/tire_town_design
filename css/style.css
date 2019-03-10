@@ -4994,7 +4994,8 @@ button.btn-cart {
 	border-color: #fff;
 }
 .products-grid .item .item-inner .item-info .info-inner .item-title a:hover {
-	color: #0083c1;
+	/*color: #0083c1;*/
+	color: #2CACE2;
 }
 .products-grid .item:hover .item-inner .item-img .item-box-hover {
 	visibility: visible;
@@ -5003,8 +5004,8 @@ button.btn-cart {
 	bottom: 0px;
 }
 .products-grid .item:hover .item-inner .item-info .info-inner .item-title a {
-	color: #0275d8;
-
+	/*color: #0275d8;*/
+	color: #2CACE2;
 }
 .products-grid .item:hover .item-inner .item-info .info-inner .action button.button {
 	background: #334141;
@@ -10205,10 +10206,7 @@ select {
 }
 input.input-text, select, textarea {
 	padding: 6px 10px;
-/*	outline: none;
-	color: #999;
-	border: 1px solid #ddd;*/
-	background: #FFFFFF;
+	/*background: #FFFFFF;*/
 	border: 1px solid #EAEAEA;
 	box-sizing: border-box;
 	line-height: 16px;
@@ -12156,10 +12154,10 @@ a.shop-now-btn {
 	float: left;
 }
 .sorter .view-mode {
-	float: left;
-	margin-top: 10px;
-	margin-right: 20px;
-	margin-left: 0px;
+	/*float: left;*/
+	margin-top: 3px;
+	/*margin-right: 20px;*/
+	/*margin-left: 0px;*/
 }
 .sorter .sort-by {
 	float: left;
@@ -12169,7 +12167,8 @@ a.shop-now-btn {
 .toolbar {
 	clear: both;
 	/*margin-top: 5px;*/
-	padding:0px 15px 19px 15px;
+	/*padding:0px 15px 19px 15px;*/
+	padding: 0px 2px 19px 2px;
 	display:block;
 	width: 100%;
 	margin-bottom: 0px;
@@ -12179,13 +12178,16 @@ a.shop-now-btn {
 .toolbar-top {
   border-bottom: 1px #E8E8E8 solid;
   background: none;
+  overflow: hidden;
 }
 .toolbar-bottom {
 	margin-top: -75px;
 	background: none;
+	overflow: hidden;
 }
 .toolbar .sorter {
-	float: left;
+	float: right;
+	margin-right: 40px;
 }
 .toolbar .pager .pages ol {
 	float: none;
@@ -14785,7 +14787,7 @@ footer .footer-inner {
 	width: 90px;
 }
 .sorter .view-mode {
-	margin-top: 6px;
+	/*margin-top: 6px;*/
 }
 .products-list .item-img {
 	width: 47%;
@@ -15619,7 +15621,7 @@ bottom-banner-img1.last {
 	width: 20%;
 }
 .sorter .view-mode {
-	margin-top: 6px;
+	/*margin-top: 6px;*/
 }
 #column-left .special-products .product-thumb .caption {
 	width: 56%;
@@ -16282,7 +16284,7 @@ ol#compare-items li a.product-name {
 	margin-top: 0px;
 }
 .toolbar .sorter {
-	margin-top: 6px;
+	margin-top: 3px;
 }
 .slider-items-products .owl-buttons .owl-prev, .slider-items-products .owl-buttons .owl-next {
 	top: -25.5%;
@@ -16769,6 +16771,7 @@ button.button.button-clear {
 .pagination {
 	margin: 0px;
 	padding: 0px;
+	float: right;
 }
 .pagination .page-arrow {
 	background: #2CACE2;
@@ -16798,6 +16801,14 @@ button.button.button-clear {
 	margin-top: 17px;
 	font-style: normal;
 	font-weight: bold;
+	line-height: normal;
+	font-size: 14px;
+	color: #4D4D4D;
+}
+.approved {
+	margin-top: 17px;
+	font-style: normal;
+	font-weight: normal;
 	line-height: normal;
 	font-size: 14px;
 	color: #4D4D4D;
@@ -17008,6 +17019,9 @@ button.button.button-clear {
 	.drop-down-area .radios div {
 		float: left;
 	}
+	.no-slider .drop-down-area .col-lg-4, .no-slider .drop-down-area .col-lg-3 {
+		margin-top: 10px;
+	}
 }
 @media only screen and (min-width: 320px) and (max-width: 479px) {
 	.info .shop-button-max {
@@ -17063,6 +17077,7 @@ button.button.button-clear {
 	line-height: normal;
 	font-size: 12px;
 	text-transform: uppercase;
+	color: #334141;
 }
 .drop-down select {
 	width: 100%;
@@ -17075,7 +17090,7 @@ button.button.button-clear {
 	text-align: center;
 	padding: 30px 0 10px;
 }
-.drop-down-area .col-lg-4 {
+.drop-down-area .col-lg-4, .drop-down-area .col-lg-3 {
 	padding-left: 10px;
 	padding-right: 10px;
 }
@@ -17107,13 +17122,16 @@ button.button.button-clear {
 .drop-down-area .shop-button-green {
 	margin: 20px 0;
 }
-.drop-down-area .shop-button-green a {
-	padding: 12px 10% 8px;
+.drop-down-area .shop-button-green-wide a {
+	padding: 12px 20% 8px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.part-gray {
 		width: 95%;
+	}
+	.no-slider {
+		width: 100%;
 	}
 	.drop-down-area {
 		margin-top: 5px;
@@ -17526,5 +17544,51 @@ button.button.button-clear {
 	}
 	.security-code .half input {
 		width: calc(100% - 10px);
+	}
+}
+.page-desc {
+	font-size: 16px;
+	font-weight: bold;
+	color: #4D4D4D;
+}
+.page-desc a {
+	font-size: 14px;
+	color: #2CACE2;
+}
+.view-mode a.button-list {
+	background: #f8f8f8 url(../images/icon_list.png) no-repeat;
+  text-transform: none;
+  padding: 0;
+  float: right;
+  width: 16px;
+  height: 16px;
+}
+.view-mode span.button-grid {
+	background: url(../images/icon_grid.png) no-repeat;
+  padding: 0;
+  margin-right: 5px;
+  border: none;
+  float: right;
+  width: 16px;
+  height: 16px;
+}
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+	.toolbar .sorter {
+		float: left;
+		margin-right: 0;
+	}
+}
+.toolbar .sorter.no-pagination {
+	margin-right: 0;
+}
+.top-margin {
+	margin-top: 20px;
+}
+.drop-down-area .col-lg-4.no-first {
+	margin-top: 15px;
+}
+@media only screen and (max-width: 767px) {
+	.drop-down-area .col-lg-4.no-first {
+		margin-top: 10px;
 	}
 }
