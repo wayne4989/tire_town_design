@@ -4884,35 +4884,20 @@ button.btn-cart {
 	border-radius: 18px;
 }
 .products-grid .item .item-inner .item-img .item-img-info {
-	text-align: center;
-	-webkit-transition: all 0.3s ease-out;
-	-moz-transition: all 0.3s ease-out;
-	-o-transition: all 0.3s ease-out;
-	transition: all 0.3s ease-out;
-	position: relative;
 	overflow: hidden;
 }
 .products-grid .item .item-inner .item-img .item-img-info a.product-image {
-	width: 100%;
-/*	overflow: hidden;  */
-	display: inline-block;
-}
-
-
-
-
-
-.products-grid .item .item-inner .item-img .item-img-info a.product-image img {
-	width: 100%;
+	line-height: 220px;
 }
 .products-grid .item .item-inner .item-img .item-img-info a.product-image img {
+	/*width: 100%;*/
 	-webkit-transition-duration: 500ms;
 	transition-duration: 500ms;
 	-webkit-transition-property: transform;
 	transition-property: transform;
-/*	-webkit-transform: translateZ(0);
-	-moz-transform: translateZ(0);
-	transform: translateZ(0);  */
+	display: inline-block;
+	margin: auto;
+	vertical-align: middle;
 }
 .products-grid .item .item-inner .item-img .item-img-info a.product-image:hover img {
 	-webkit-transform: scale(2.2);
@@ -4960,13 +4945,12 @@ button.btn-cart {
   /*padding-top: 13px;*/
   overflow: hidden;
   line-height: 19px;
-	/*min-height: 51px;*/
+	min-height: 38px;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
 	color: #2CACE2;
 }
-
 .brand {
 	font-style: normal;
 	font-weight: bold;
@@ -5563,13 +5547,12 @@ a.button.detail-bnt span {
 }
 .price-box {
 	padding: 0px 0px 0px 0px;
-    min-height: 28px;
-    margin: 3px 0;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #456883;
-    font-size: 14px;
-
+  min-height: 22px;
+  margin: 3px 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #456883;
+  font-size: 14px;
 }
 /* Regular price */
 .regular-price {
@@ -16926,8 +16909,8 @@ button.button.button-clear {
 	}
 }
 @media only screen and (min-width: 478px) and (max-width: 767px) {
-	.row-slider .buy-btn {
-    /*display: block;*/
+	.products-grid .item .item-inner .item-img .item-img-info a.product-image {
+		line-height: 300px;
 	}
 }
 .popup .row {
@@ -17591,4 +17574,12 @@ button.button.button-clear {
 	.drop-down-area .col-lg-4.no-first {
 		margin-top: 10px;
 	}
+}
+.products-grid .item .item-inner .item-info {
+	/*min-height: 268px;*/
+}
+.category-products ul.products-grid li.no-border {
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
